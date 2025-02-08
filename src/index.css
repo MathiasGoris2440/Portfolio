@@ -74,6 +74,10 @@ button {
     fill: var(--bg-color);
 }
 
+.nav-li:hover {
+    transform: translateY(-5px); /* Moves the item 5px up */
+}
+
 @keyframes hover-bounce {
     0% {
         transform: scale(1);

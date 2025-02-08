@@ -25,7 +25,7 @@ export const navLinks = [
         href: '#experience',
     },
     {
-        id: 5,
+        id: 6,
         name: 'Contact',
         href: '#contact',
     },

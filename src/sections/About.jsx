@@ -57,7 +57,7 @@ const About = () => {
 
 
     return (
-      <section className={"c-space my-20"} id={"about"}>
+      <section className={"About c-space my-20"} id={"about"}>
           <h3 className={"head-text"}>About me</h3>
           <motion.div
               variants={gridContainerVariants}

@@ -1,9 +1,12 @@
-import React, {useContext, useEffect, useRef, useState} from 'react'
+import React, {useContext, useState} from 'react'
 import Globe from "react-globe.gl";
 import Button from "../Components/Button.jsx";
 import { motion } from "motion/react"
 import {CursorContext} from "../Components/CursorContext.jsx";
 import LogoList from "../Components/LogoList.jsx";
+import Lottie from "lottie-react";
+import Developer from "/src/json/developer.json";
+
 
 const gridContainerVariants = {
     hidden: {opacity: 0},
@@ -57,21 +60,24 @@ const About = () => {
 
 
     return (
-      <section className={"About c-space my-20"} id={"about"}>
+      <section className={"About c-space my-16"} id={"about"}>
           <h3 className={"head-text"}>About me</h3>
           <motion.div
               variants={gridContainerVariants}
-              initial={"hidden"}
-              whileInView={"animate"}
-              margin={"-300px"}
-              transition={{delay: 1}}
-              className={"grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full mt-12"}>
+              initial="hidden"
+              whileInView="animate"
+              margin="-300px"
+              transition={{ delay: 1 }}
+              className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 h-auto mt-12 auto-rows-min"
+          >
 
-              <motion.div
+
+
+          <motion.div
                   variants={gridSquareVariants}
                   className={"col-span-1 xl:row-span-3"}>
                   <div className={"grid-container"} onMouseMove={handleMouseMove} style={{ "--mouse-x": mousePosition.x, "--mouse-y": mousePosition.y }}>
-                      <img src={"/assets/grid1.png"} alt={"grid-1"} className={"w-full sm:h[276px] h-60  object-contain"} />
+                      <Lottie animationData={Developer} loop={true}  className={"w-fit h-fit"} />
 
                       <div>
                           <p className={"grid-headtext"}>Hi, I&#39;m Mathias</p>
@@ -102,20 +108,19 @@ const About = () => {
                   <div className={"grid-container"} onMouseMove={handleMouseMove} style={{ "--mouse-x": mousePosition.x, "--mouse-y": mousePosition.y }}>
                       <div className={"rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center"}>
                           <Globe
-                              height={326}
-                              width={326}
+                              height={364}
+                              width={364}
                               backgroundColor={"rgba(0, 0, 0, 0)"}
-                              backgroundImageOpacity={0.5}
-                              showAtmosphere
-                              showGraticules
-                              globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                              bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                               labelsData={[{
                                   lat: 51, lng: 5,
                                   text: "I'm here!",
                                   color: "white",
-                                  size: 20,
+                                  size: 48,
                               }]}
+                              showAtmosphere={false}
+                              globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+                              bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+
                           />
                       </div>
                       <div>

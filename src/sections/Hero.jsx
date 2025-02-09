@@ -61,7 +61,7 @@ const Hero = () => {
             </div>
 
             {/* Button Container */}
-            <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space flex items-center justify-center">
+            <div className="absolute bottom-2 left-0 right-0 w-full z-10 c-space flex items-center justify-center">
                 <a href="#about" className="w-fit">
                     <Lottie animationData={ScrollDown} loop={true} className={"w-20 h-20"} />
                 </a>

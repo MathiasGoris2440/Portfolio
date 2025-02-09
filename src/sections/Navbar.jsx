@@ -3,14 +3,16 @@ import {navLinks} from "../constants/index.js";
 
 const NavItems = () => {
     return (
-        <ul className={"nav-ul"}>
-            {navLinks.map(({id, href, name}) => (
-                <li key={id} className={"nav-li transform duration-300 ease"}>
-                    <a href={href} className={"nav-li_a"}>{name}</a>
+        <ul className="nav-ul">
+            {navLinks.map(({ id, href, name }) => (
+                <li key={id} className="nav-li ">
+                    <a href={href} className="nav-li_a block relative ">
+                        <span className="nav-li__text block transition-transform duration-300 ease-in-out">{name}</span>
+                    </a>
                 </li>
             ))}
         </ul>
-    )
+    );
 }
 
 

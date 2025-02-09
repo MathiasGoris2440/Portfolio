@@ -74,21 +74,16 @@ button {
     fill: var(--bg-color);
 }
 
-.nav-li:hover {
-    transform: translateY(-5px); /* Moves the item 5px up */
+
+
+/* Animate the inner text */
+
+
+/* On hover of the anchor, move only the inner text */
+.nav-li_a:hover .nav-li__text {
+    transform: translateY(-5px);
 }
 
-@keyframes hover-bounce {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 
 @layer utilities {
 
@@ -192,15 +187,18 @@ button {
     }
 
     /* education section  */
-    .vertical-timeline::before {
+    #education .vertical-timeline::before {
         /* this is the vertical line */
 
-        background: white !important;
-        border-radius: 2px !important;
+        background: rgb(28, 28, 33);
+        border-radius: 4px !important;
+        border: white 2px solid !important;
+        width: 0.5rem;
+        margin-left: -4px;
     }
-    .vertical-timeline-element--work:hover .vertical-timeline-element-content.bounce-in {
 
-    }
+
+
 
     .vertical-timeline-title {
         @apply text-base font-semibold mb-2 text-white  font-generalsans;

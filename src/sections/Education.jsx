@@ -75,7 +75,7 @@ const Education = () => {
                     <h3 className="vertical-timeline-title">
                         Banaba Toegepaste Informatica – Artificial Intelligence
                     </h3>
-                    <h4 className="vertical-timeline-subtitle">Howest</h4>
+                    <h4 className="vertical-timeline-subtitle">Howest, Brugge</h4>
                     <p className={"grid-subtext"}>A one-year specialization focused on AI development, including machine learning, deep learning, and data-driven decision-making. Courses cover ethical AI, NLP, and computer vision.</p>
                     <div className="flex justify-end items-center">
                         <a
@@ -109,7 +109,7 @@ const Education = () => {
                     <h3 className="vertical-timeline-title">
                         Bachelor Toegepaste Informatica – Software Engineering
                     </h3>
-                    <h4 className="vertical-timeline-subtitle">Howest</h4>
+                    <h4 className="vertical-timeline-subtitle">Howest, Brugge</h4>
                     <p className={"grid-subtext"}>A comprehensive three-year program focusing on software development, system architecture, and database management. Key areas include object-oriented programming, web development, and software testing. The program also emphasizes agile methodologies and project management, preparing me for a career in software engineering.</p>
                     <div className="flex justify-end items-center">
                         <a
@@ -142,7 +142,7 @@ const Education = () => {
                 >
                     <h3 className="vertical-timeline-title">Accountancy and IT</h3>
                     <h4 className="vertical-timeline-subtitle">Sint Maria Geel</h4>
-                    <p className={"grid-subtext"}>During the last two years of high school, I pursued a program that combined accountancy with information technology, providing a solid foundation in both fields. This was my first exposure to programming, where I developed an interest in IT that eventually led me to pursue a career in software engineering and artificial intelligence.</p>
+                    <p className={"grid-subtext"}>During the last two years of high school, I pursued a program that combined accountancy with information technology, providing a solid foundation in both fields. This was my first experience to programming, where I developed a love for IT that led me to pursue a career in software engineering and artificial intelligence.</p>
                     <div className="flex justify-end items-center">
                         <a
                             className="flex items-center gap-2 cursor-pointer text-white-600"

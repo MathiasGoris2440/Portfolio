@@ -90,7 +90,7 @@ const About = () => {
                   variants={gridSquareVariants}
                   className={"col-span-1 xl:row-span-3"}>
                   <div className={"grid-container"} onMouseMove={handleMouseMove} style={{ "--mouse-x": mousePosition.x, "--mouse-y": mousePosition.y }}>
-                    <img src={"/assets/resume.png"} alt={"grid-2"} className={"w-fit sm:h[276px] h-60 object-contain m-auto"}/>
+                    <img src={"assets/resume.png"} alt={"grid-2"} className={"w-fit sm:h[276px] h-60 object-contain m-auto"}/>
 
                       <div>
                       <p className={"grid-headtext"}>Download My CV</p>
@@ -157,7 +157,7 @@ const About = () => {
                   variants={gridSquareVariants}
                   className={"xl:col-span-1 xl:row-span-2"}>
                   <div className={"grid-container"} onMouseMove={handleMouseMove} style={{ "--mouse-x": mousePosition.x, "--mouse-y": mousePosition.y }}>
-                      <img src={"/assets/grid4.png"} alt={"grid-4"} className={"w-full md:h-[126px] sm:h-[266px] h-fit object-cover sm:object-top"}/>
+                      <img src={"assets/grid4.png"} alt={"grid-4"} className={"w-full md:h-[126px] sm:h-[266px] h-fit object-cover sm:object-top"}/>
 
                       <div className={"space-y-2"}>
                           <p className={"grid-subtext text-center"}>Contact me</p>

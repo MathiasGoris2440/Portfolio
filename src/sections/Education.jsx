@@ -22,7 +22,7 @@ const Education = () => {
     const SoftwareIcon = () => (
         <div className="h-full w-full flex items-center justify-center">
             <img
-                src="/assets/education/software.png"
+                src="assets/education/software.png"
                 alt="work icon"
                 className="w-10 h-10"
             />
@@ -32,7 +32,7 @@ const Education = () => {
     const AIIcon = () => (
         <div className="h-full w-full flex items-center justify-center">
             <img
-                src="/assets/education/artificial-intelligence.png"
+                src="assets/education/artificial-intelligence.png"
                 alt="work icon"
                 className="w-10 h-10"
             />
@@ -42,7 +42,7 @@ const Education = () => {
     const SchoolIcon = () => (
         <div className="h-full w-full flex items-center justify-center">
             <img
-                src="/assets/education/school.png"
+                src="assets/education/school.png"
                 alt="work icon"
                 className="w-10 h-10"
             />

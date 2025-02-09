@@ -81,7 +81,7 @@ const Contact = () => {
                          margin={"-800px"}
                          transition={{duration: 1, delay: 0.1}}
                          className={"relative min-h-screen flex items-center justify-center flex-col"}>
-                <img src={"/assets/terminal.png"} alt={"terminal background"} className={"absolute inset-0 min-h-screen"} />
+                <img src={"assets/terminal.png"} alt={"terminal background"} className={"absolute inset-0 min-h-screen"} />
 
                 <div className={"contact-container"}>
                     <h3 className={"head-text"}>Let&#39;s Talk</h3>

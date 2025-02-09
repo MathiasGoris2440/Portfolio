@@ -137,7 +137,7 @@ export const myProjects = [
         subdesc:
             'This is my first major project outside of school, where I focused on creating a polished and functional web presence. It allowed me to refine my web development skills, experiment with modern technologies, and build something truly my own.',
         href: 'https://github.com/MathiasGoris2440/Portfolio',
-        texture: '/textures/project/Portfolio.mp4',
+        texture: 'textures/project/Portfolio.mp4',
         logo: 'MG.png',
         imgStyle: {
         },
@@ -146,12 +146,12 @@ export const myProjects = [
             border: '0.2px solid #36201D',
             boxShadow: '0px 0px 60px 0px #AA3C304D',
         },
-        spotlight: '/assets/spotlight1.png',
+        spotlight: 'assets/spotlight1.png',
         tags: [
             {
                 id: 1,
                 name: 'React.js',
-                path: '/assets/react.svg',
+                path: 'assets/react.svg',
             },
             {
                 id: 2,
@@ -161,12 +161,12 @@ export const myProjects = [
             {
                 id: 3,
                 name: 'Three.js',
-                path: '/assets/ProgramIcons/three-js.png',
+                path: 'assets/ProgramIcons/three-js.png',
             },
             {
                 id: 4,
                 name: 'Framer Motion',
-                path: '/assets/framer.png',
+                path: 'assets/framer.png',
             },
         ],
     },
@@ -176,8 +176,8 @@ export const myProjects = [
         subdesc:
             'This project was developed as part of my third-semester coursework in a team setting. We built both the front end and back end, focusing on creating a seamless and engaging user experience.',
         href: 'https://github.com/MathiasGoris2440/project-mars.git',
-        texture: '/textures/project/mars.mp4',
-        logo: '/assets/Projects/martian_logo.png',
+        texture: 'textures/project/mars.mp4',
+        logo: 'assets/Projects/martian_logo.png',
         imgStyle: {
             'object-fit': 'scale-down'
         },
@@ -187,32 +187,32 @@ export const myProjects = [
             boxShadow: '0px 0px 60px 0px #2F6DB54D',
 
         },
-        spotlight: '/assets/spotlight2.png',
+        spotlight: 'assets/spotlight2.png',
         tags: [
             {
                 id: 1,
                 name: 'HTML5',
-                path: '/assets/ProgramIcons/html-5.png',
+                path: 'assets/ProgramIcons/html-5.png',
             },
             {
                 id: 2,
                 name: 'SASS',
-                path: '/assets/ProgramIcons/sass.png',
+                path: 'assets/ProgramIcons/sass.png',
             },
             {
                 id: 3,
                 name: 'Javascript',
-                path: '/assets/ProgramIcons/javascript.png',
+                path: 'assets/ProgramIcons/javascript.png',
             },
             {
                 id: 4,
                 name: 'Java',
-                path: '/assets/ProgramIcons/java.png',
+                path: 'assets/ProgramIcons/java.png',
             },
             {
                 id: 5,
                 name: 'MySQL',
-                path: '/assets/ProgramIcons/mySql.png',
+                path: 'assets/ProgramIcons/mySql.png',
             },
         ],
     },
@@ -221,8 +221,8 @@ export const myProjects = [
         desc: 'A fast and efficient tool for removing backgrounds from images, designed to balance speed and accuracy for various applications. The goal was to create a solution that delivers high-quality results while keeping processing times minimal.',
         subdesc: 'Developed during my internship at Spectrum.io in my sixth semester, this project focused on researching and implementing the best background removal techniques to optimize performance and quality.',
         href: '',
-        texture: '/textures/project/backgroundRemover.mp4',
-        logo: '/assets/Projects/printlane-logo.png',
+        texture: 'textures/project/backgroundRemover.mp4',
+        logo: 'assets/Projects/printlane-logo.png',
         imgStyle: {
 
         },
@@ -233,23 +233,23 @@ export const myProjects = [
             padding: '4px'
 
         },
-        spotlight: '/assets/spotlight4.png',
+        spotlight: 'assets/spotlight4.png',
         tags: [
             {
                 id: 1,
                 name: 'Python',
-                path: '/assets/ProgramIcons/python.png',
+                path: 'assets/ProgramIcons/python.png',
             },
 
             {
                 id: 2,
                 name: 'Node.js',
-                path: '/assets/ProgramIcons/nodejs.png',
+                path: 'assets/ProgramIcons/nodejs.png',
             },
             {
                 id: 3,
                 name: 'Vue.js',
-                path: '/assets/ProgramIcons/vue-js.png',
+                path: 'assets/ProgramIcons/vue-js.png',
             },
         ],
     },
@@ -259,8 +259,8 @@ export const myProjects = [
         subdesc:
             'We focused on creating a solid foundation with a functional prototype and documentation, allowing for future development and growth.',
         href: '',
-        texture: '/textures/project/CrmHowest.mp4',
-        logo: '/assets/Projects/howest-hogeschool-logo2.png',
+        texture: 'textures/project/CrmHowest.mp4',
+        logo: 'assets/Projects/howest-hogeschool-logo2.png',
         imgStyle: {
         },
         logoStyle: {
@@ -271,13 +271,13 @@ export const myProjects = [
             boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
             'overflow': 'hidden',
         },
-        spotlight: '/assets/spotlight3.png',
+        spotlight: 'assets/spotlight3.png',
 
         tags: [
             {
                 id: 1,
                 name: 'TypeScript',
-                path: '/assets/typescript.png',
+                path: 'assets/typescript.png',
             },
             {
                 id: 2,
@@ -287,17 +287,17 @@ export const myProjects = [
             {
                 id: 3,
                 name: 'node.js',
-                path: '/assets/ProgramIcons/nodejs.png',
+                path: 'assets/ProgramIcons/nodejs.png',
             },
             {
                 id: 4,
                 name: 'PostgreSQL',
-                path: '/assets/ProgramIcons/Postgresql.png',
+                path: 'assets/ProgramIcons/Postgresql.png',
             },
             {
                 id: 5,
                 name: 'Prisma',
-                path: '/assets/ProgramIcons/prisma.png',
+                path: 'assets/ProgramIcons/prisma.png',
             },
         ],
     },
@@ -307,30 +307,30 @@ export const myProjects = [
         subdesc:
             'I regularly use CodePen to build small interactive elements, animations, and UI components, allowing me to push my creativity while learning new techniques and staying up-to-date with web trends.',
         href: 'https://codepen.io/MathiasGoris2440',
-        texture: '/textures/project/codepen.mp4',
-        logo: '/assets/Projects/codepen.png',
+        texture: 'textures/project/codepen.mp4',
+        logo: 'assets/Projects/codepen.png',
         logoStyle: {
             backgroundColor: '#1C1A43',
             border: '0.2px solid #252262',
             boxShadow: '0px 0px 60px 0px #635BFF4D',
             padding: '4px'
         },
-        spotlight: '/assets/spotlight5.png',
+        spotlight: 'assets/spotlight5.png',
         tags: [
             {
                 id: 1,
                 name: 'HTML5',
-                path: '/assets/ProgramIcons/html-5.png',
+                path: 'assets/ProgramIcons/html-5.png',
             },
             {
                 id: 2,
                 name: 'CSS',
-                path: '/assets/ProgramIcons/css-3.png',
+                path: 'assets/ProgramIcons/css-3.png',
             },
             {
                 id: 3,
                 name: 'Javascript',
-                path: '/assets/ProgramIcons/javascript.png',
+                path: 'assets/ProgramIcons/javascript.png',
             },
         ],
     },
@@ -354,7 +354,7 @@ export const myExperience = [
         pos: 'Jobstudent tuincentrum',
         duration: '2024 - Present',
         title: "I am responsible for restocking inventory and ensuring the store remains clean, organized, and visually appealing. Additionally, I handle cashier duties, process payments efficiently, and provide excellent customer service at checkout. I also assist in setting up seasonal displays and promotional arrangements to enhance the shopping experience.",
-        icon: '/assets/ohGreenLogo.png',
+        icon: 'assets/ohGreenLogo.png',
         animation: 'victory',
     },
     {
@@ -363,7 +363,7 @@ export const myExperience = [
         pos: 'IT Support',
         duration: '2023 - Present',
         title: "At Beego, I help people with their IT problems, which strengthens and sharpens my own problem-solving skills. By providing personal support and practical solutions, I not only enhance my technical knowledge but also improve my communication skills and customer focus.",
-        icon: '/assets/beego_logo.png',
+        icon: 'assets/beego_logo.png',
         animation: 'clapping',
     },
     {
@@ -372,7 +372,7 @@ export const myExperience = [
         pos: 'Jobstudent Winkel',
         duration: '2021 - 2022',
         title: "During my two-year involvement with Alma, I gained valuable experience that enhanced my customer service skills and strengthened my ability to work effectively in a team.",
-        icon: '/assets/carrefour-logo.png',
+        icon: 'assets/carrefour-logo.png',
         animation: 'salute',
     },
 ];

@@ -222,15 +222,15 @@ export const myProjects = [
         subdesc: 'Developed during my internship at Spectrum.io in my sixth semester, this project focused on researching and implementing the best background removal techniques to optimize performance and quality.',
         href: '',
         texture: '/textures/project/backgroundRemover.mp4',
-        logo: '/assets/Projects/spectrum-logo.png',
+        logo: '/assets/Projects/printlane-logo.png',
         imgStyle: {
-            width: '24px',
-            height: '24px'
+
         },
         logoStyle: {
             backgroundColor: '#0E1F38',
             border: '0.2px solid #0E2D58',
             boxShadow: '0px 0px 60px 0px #2F67B64D',
+            padding: '4px'
 
         },
         spotlight: '/assets/spotlight4.png',
@@ -260,7 +260,7 @@ export const myProjects = [
             'We focused on creating a solid foundation with a functional prototype and documentation, allowing for future development and growth.',
         href: '',
         texture: '/textures/project/CrmHowest.mp4',
-        logo: '/assets/Projects/howest-hogeschool-logo.png',
+        logo: '/assets/Projects/howest-hogeschool-logo2.png',
         imgStyle: {
         },
         logoStyle: {
@@ -269,6 +269,7 @@ export const myProjects = [
                 'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
             border: '0.2px solid rgba(208, 213, 221, 1)',
             boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+            'overflow': 'hidden',
         },
         spotlight: '/assets/spotlight3.png',
 

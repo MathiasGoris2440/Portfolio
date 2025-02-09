@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, {useContext, useEffect, useRef} from 'react';
 import Spheres1Background from 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.17/build/backgrounds/spheres1.cdn.min.js';
 import HeroTag from "../Components/HeroTag.jsx";
 import ScrollDown from "/src/json/Scroll-Down.json";
 import Lottie from "lottie-react";
+import {CursorContext} from "../Components/CursorContext.jsx";
 
 const Hero = () => {
     const canvasRef = useRef(null);
@@ -24,6 +25,20 @@ const Hero = () => {
             // For example: bgRef.current.dispose();
         };
     }, []);
+
+    const cursor = useContext(CursorContext);
+
+    const handleMouseEnter = () => {
+        if (cursor.current) {
+            cursor.current.classList.add("cursor-hover");
+        }
+    };
+
+    const handleMouseLeave = () => {
+        if (cursor.current) {
+            cursor.current.classList.remove("cursor-hover");
+        }
+    };
 
     return (
         <section className="min-h-screen w-full flex flex-col" id="home">
@@ -59,6 +74,18 @@ const Hero = () => {
                     </svg>
                 </div>
             </div>
+
+            <div className="w-full flex justify-center items-center gap-10 mt-5">
+            <a href="https://www.linkedin.com/in/mathias-goris-4574572a0/" target="_blank" rel="noopener noreferrer" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                <img src="assets/linkedin2.png" alt="LinkedIn" className="w-10 h-10 hover:scale-110 transition-transform m-2" />
+            </a>
+            <a href="https://github.com/MathiasGoris2440" target="_blank" rel="noopener noreferrer" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                <img src="assets/github.png" alt="GitHub" className="w-10 h-10 hover:scale-110 transition-transform m-2" />
+            </a>
+                <a href="mailto:mathias.goris@outlook.com" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
+                    <img src="assets/email.png" alt="Email" className="w-10 h-10  m-2 hover:scale-110 transition-transform" />
+                </a>
+        </div>
 
             {/* Button Container */}
             <div className="absolute bottom-2 left-0 right-0 w-full z-10 c-space flex items-center justify-center">

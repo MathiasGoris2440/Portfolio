@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from 'react';
+import {useMediaQuery} from "react-responsive";
 
 const words = ["IT Student", "Developer", "Problem Solver", "Tech Enthusiast", "AI Explorer"];
 const CHANGE_WORD_TIMER = 2000;
-const WORD_HEIGHT = 36;
 
 const HeroTag = () => {
+    const isMobile = useMediaQuery({ maxWidth: 768 });
+    const WORD_HEIGHT = isMobile ? 21 : 36;
     const wordListRef = useRef(null);
 
     useEffect(() => {
@@ -25,7 +27,7 @@ const HeroTag = () => {
     }, []);
 
     return (
-        <div className="relative w-full max-w-56 h-[42px] sm:max-w-[350px] md:max-w-56 border-2 rounded-lg border-white bg-black-200 overflow-hidden">
+        <div className="relative p-1  sm:h-10 h-8  border-2 rounded-lg border-white bg-black-200 overflow-hidden flex items-center justify-center">
             <div
                 className="flex flex-col items-center transform duration-500 ease-in-out"
                 id="wordList"
@@ -33,7 +35,7 @@ const HeroTag = () => {
                 aria-live="polite"
             >
                 {words.map((word, index) => (
-                    <div key={index} className="hero_tag text-gray_gradient">{word}</div>
+                    <div key={index} className="hero_tag text-white-800  ">{word}</div>
                 ))}
             </div>
         </div>

@@ -4,8 +4,16 @@ import HeroTag from "../Components/HeroTag.jsx";
 import ScrollDown from "/src/json/Scroll-Down.json";
 import Lottie from "lottie-react";
 import {CursorContext} from "../Components/CursorContext.jsx";
+import {calculateSizes} from "../constants/index.js";
+import {useMediaQuery} from "react-responsive";
 
 const Hero = () => {
+    const isSmall = useMediaQuery({ maxWidth: 440 });
+    const isMobile = useMediaQuery({ maxWidth: 768 });
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+
+    const sizes = calculateSizes(isSmall, isMobile, isTablet);
+
     const canvasRef = useRef(null);
     const bgRef = useRef(null);
 
@@ -43,15 +51,15 @@ const Hero = () => {
     return (
         <section className="min-h-screen w-full flex flex-col" id="home">
             {/* Hero Text */}
-            <div className="w-full h-96 mx-auto flex flex-col items-center justify-center sm:mt-36 mt-20 c-space gap-3 relative z-10  ">
-                <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans border-2 rounded-lg border-white bg-black-200 p-2">
+            <div className="w-full sm:h-96 h-52  mx-auto flex flex-col items-center justify-center mt-36 c-space gap-3 relative z-10  ">
+                <p className="sm:text-3xl text-base font-medium text-white text-center font-generalsans border-2 rounded-lg border-white bg-black-200 p-2">
                     Hi, I am Mathias Goris <span className="waving-hand">🤚</span>
                 </p>
                 <HeroTag/>
             </div>
-
+c
             <div
-                className="w-full h-96 absolute top-32 left-0 pointer-events-none"
+                className="w-full sm:h-96 h-52  absolute top-32 left-0 pointer-events-none"
                 style={{zIndex: -1}}
             >
                 <div className="custom-shape-divider-top">
@@ -75,15 +83,15 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="w-full flex justify-center items-center gap-10 mt-5">
+            <div className="w-full flex justify-center items-center gap-10 sm:mt-5 mt-0">
             <a href="https://www.linkedin.com/in/mathias-goris-4574572a0/" target="_blank" rel="noopener noreferrer" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <img src="assets/linkedin2.png" alt="LinkedIn" className="w-10 h-10 hover:scale-110 transition-transform m-2" />
+                <img src="assets/linkedin2.png" alt="LinkedIn" className="hero_link" />
             </a>
             <a href="https://github.com/MathiasGoris2440" target="_blank" rel="noopener noreferrer" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <img src="assets/github.png" alt="GitHub" className="w-10 h-10 hover:scale-110 transition-transform m-2" />
+                <img src="assets/github.png" alt="GitHub" className="hero_link" />
             </a>
                 <a href="mailto:mathias.goris@outlook.com" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
-                    <img src="assets/email.png" alt="Email" className="w-10 h-10  m-2 hover:scale-110 transition-transform" />
+                    <img src="assets/email.png" alt="Email" className="hero_link" />
                 </a>
         </div>
 

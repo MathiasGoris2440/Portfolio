@@ -95,9 +95,10 @@ const About = () => {
                       <div>
                       <p className={"grid-headtext"}>Download My CV</p>
                       <p className={"grid-subtext"}>Get to know more about my experience and skills by downloading my CV.</p>
-                      <Button name={"Download CV"} containerClass={"mt-5 w-full"}>
+                          <a href="cv/Mathias_Goris_CV.pdf" download="Mathias_Goris_CV.pdf">
+                              <Button name={"Download CV"} containerClass={"mt-5 w-full"} />
+                          </a>
 
-                      </Button>
                   </div>
                   </div>
               </motion.div>

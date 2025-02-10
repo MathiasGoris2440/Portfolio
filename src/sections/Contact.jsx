@@ -2,6 +2,7 @@ import React, {useContext, useRef, useState} from 'react'
 import emailjs from '@emailjs/browser'
 import { motion } from "motion/react"
 import {CursorContext} from "../Components/CursorContext.jsx";
+import {useMediaQuery} from "react-responsive";
 
 const gridContainerVariants = {
     hidden: {scale: 0},
@@ -11,6 +12,7 @@ const gridContainerVariants = {
 }
 
 const Contact = () => {
+    const isMobile = useMediaQuery({ maxWidth: 768 });
     const formRef = useRef();
 
     const [loading, setLoading] = useState(false)
@@ -81,7 +83,9 @@ const Contact = () => {
                          margin={"-800px"}
                          transition={{duration: 1, delay: 0.1}}
                          className={"relative min-h-screen flex items-center justify-center flex-col"}>
-                <img src={"assets/terminal.png"} alt={"terminal background"} className={"absolute inset-0 min-h-screen"} />
+                {!isMobile &&
+                    <img src={"assets/terminal.png"} alt={"terminal background"} className={"absolute inset-0 min-h-screen"} />
+                }
 
                 <div className={"contact-container"}>
                     <h3 className={"head-text"}>Let&#39;s Talk</h3>

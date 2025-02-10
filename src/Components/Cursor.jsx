@@ -22,7 +22,13 @@ const Cursor = () => {
         cursor.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
     };
 
-    return <div className="cursor" ref={cursor}></div>;
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)){
+        console.log("is Mobile")
+        return null
+    }
+    else {
+        return <div className="cursor" ref={cursor}></div>;
+    }
 };
 
 

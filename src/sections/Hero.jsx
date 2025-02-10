@@ -57,7 +57,6 @@ const Hero = () => {
                 </p>
                 <HeroTag/>
             </div>
-c
             <div
                 className="w-full sm:h-96 h-52  absolute top-32 left-0 pointer-events-none"
                 style={{zIndex: -1}}

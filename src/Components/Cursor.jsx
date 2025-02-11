@@ -23,7 +23,6 @@ const Cursor = () => {
     };
 
     if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)){
-        console.log("is Mobile")
         return null
     }
     else {

@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "preinstall": "npx npm-force-resolutions"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -46,5 +47,8 @@
     "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17",
     "vite": "^6.0.5"
+  },
+  "resolutions": {
+    "three": "0.173.0"
   }
 }

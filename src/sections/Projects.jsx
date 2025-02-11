@@ -73,7 +73,10 @@ const Projects = () => {
                     </div>
 
                     <div className={"flex flex-col gap-5 text-white-600 my-5"}>
-                        <p className={"text-white text-2xl font-semibold animatedText"}>{currentProject.title}</p>
+                        <div>
+                            <p className={"text-white text-2xl font-semibold animatedText"}>{currentProject.title}</p>
+                            <p className={"text-gray_gradient text-xl font-medium mt-0.5"}>{currentProject.subtitle}</p>
+                        </div>
                         <p className={"animatedText"}>{currentProject.desc}</p>
                         <p className={"animatedText"}>{currentProject.subdesc}</p>
                     </div>

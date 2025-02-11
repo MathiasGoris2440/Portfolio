@@ -133,6 +133,7 @@ export const clientReviews = [
 export const myProjects = [
     {
         title: 'Portfolio',
+        subtitle: 'Personal Project',
         desc: 'A showcase of my work, skills, and projects, designed to represent me as a developer and highlight my growth in the field. This website serves as a central hub for my professional journey, featuring my past projects, experience, and technical expertise.',
         subdesc:
             'This is my first major project outside of school, where I focused on creating a polished and functional web presence. It allowed me to refine my web development skills, experiment with modern technologies, and build something truly my own.',
@@ -171,7 +172,8 @@ export const myProjects = [
         ],
     },
     {
-        title: 'School Project - Martian',
+        title: 'Martian',
+        subtitle: 'School Project',
         desc: 'A Social Rating platform built specifically for Mars. The goal of the platform is to help users build and find communities where they will feel safe and content.',
         subdesc:
             'This project was developed as part of my third-semester coursework in a team setting. We built both the front end and back end, focusing on creating a seamless and engaging user experience.',
@@ -218,6 +220,7 @@ export const myProjects = [
     },
     {
         title: 'Background Remover App',
+        subtitle: 'Internship Project',
         desc: 'A fast and efficient tool for removing backgrounds from images, designed to balance speed and accuracy for various applications. The goal was to create a solution that delivers high-quality results while keeping processing times minimal.',
         subdesc: 'Developed during my internship at Spectrum.io in my sixth semester, this project focused on researching and implementing the best background removal techniques to optimize performance and quality.',
         href: '',
@@ -254,7 +257,8 @@ export const myProjects = [
         ],
     },
     {
-        title: 'CRM Project - School Project',
+        title: 'CRM - Howest International',
+        subtitle: 'School Project',
         desc: 'In our Software Engineering project, we worked with Howest International to solve data management issues for international students. The data was disorganized in Excel files, so we developed a CRM system to centralize and secure the information.',
         subdesc:
             'We focused on creating a solid foundation with a functional prototype and documentation, allowing for future development and growth.',
@@ -303,6 +307,7 @@ export const myProjects = [
     },
     {
         title: 'CodePen Projects',
+        subtitle: 'Personal Projects',
         desc: 'A platform where I experiment with web development and share interactive front-end projects. CodePen is where I often explore new ideas, test out different concepts, and create mini-projects to showcase my skills in HTML, CSS, and JavaScript.',
         subdesc:
             'I regularly use CodePen to build small interactive elements, animations, and UI components, allowing me to push my creativity while learning new techniques and staying up-to-date with web trends.',

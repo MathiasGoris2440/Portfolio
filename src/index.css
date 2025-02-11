@@ -18,8 +18,6 @@ body {
     background: var(--bg-color);
     font-family: 'General Sans', sans-serif;
     cursor: url("/assets/custom-cursor.png"), auto;
-    color-gamut: srgb;
-
 }
 
 a {

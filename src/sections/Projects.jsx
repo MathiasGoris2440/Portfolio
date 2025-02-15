@@ -74,11 +74,11 @@ const Projects = () => {
 
                     <div className={"flex flex-col gap-5 text-white-600 my-5"}>
                         <div>
-                            <p className={"text-white text-2xl font-semibold animatedText"}>{currentProject.title}</p>
+                            <p className={"text-white text-2xl font-semibold"}>{currentProject.title}</p>
                             <p className={"text-gray_gradient text-xl font-medium mt-0.5"}>{currentProject.subtitle}</p>
                         </div>
-                        <p className={"animatedText"}>{currentProject.desc}</p>
-                        <p className={"animatedText"}>{currentProject.subdesc}</p>
+                        <p>{currentProject.desc}</p>
+                        <p >{currentProject.subdesc}</p>
                     </div>
 
                     <div className={"flex items-center justify-between flex-wrap gap-5"}>
@@ -121,8 +121,8 @@ const Projects = () => {
                     animate: {
                         transform: "translateX(0)", opacity: 1,
                     }
-                } } className={"border border-black-300 bg-black-200 rounded-lg h-96 md:h-full"}>
-                    <Canvas>
+                } } className={"rounded-lg h-96 md:h-full"}>
+                    <Canvas className={'w-full h-full rounded-lg shadow-2xl shadow-black-200 border border-[#DDE6ED]'}>
                         <ambientLight intensity={Math.PI} />
                         <directionalLight position={[10, 10, 5]} />
                         <Center>

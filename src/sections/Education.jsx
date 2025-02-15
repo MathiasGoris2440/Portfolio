@@ -6,6 +6,7 @@ import {CursorContext} from "../Components/CursorContext.jsx";
 
 const Education = () => {
     const cursor = useContext(CursorContext);
+    const backgroundColor = '#3A6D8C';
 
     const handleMouseEnter = () => {
         if (cursor.current) {
@@ -24,7 +25,7 @@ const Education = () => {
             <img
                 src="assets/education/software.png"
                 alt="work icon"
-                className="w-10 h-10"
+                className="education-icon"
             />
         </div>
     );
@@ -34,7 +35,7 @@ const Education = () => {
             <img
                 src="assets/education/artificial-intelligence.png"
                 alt="work icon"
-                className="w-10 h-10"
+                className="education-icon"
             />
         </div>
     );
@@ -44,7 +45,7 @@ const Education = () => {
             <img
                 src="assets/education/school.png"
                 alt="work icon"
-                className="w-10 h-10"
+                className="education-icon"
             />
         </div>
     );
@@ -60,23 +61,23 @@ const Education = () => {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{
-                        background: 'rgb(14, 14, 16)',
+                        background: backgroundColor,
                         color: '#fff',
                         boxShadow: 'none',
-                        border: '2px solid rgb(28, 28, 33)'
+                        border: '2px solid #9DB2BF'
                     }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(28, 28, 33)' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #9DB2BF' }}
                     shadowSize="small"
                     intersectionObserverProps={{ triggerOnce: false }}
                     date="2024 - Present"
-                    iconStyle={{ background: 'rgb(14, 14, 16)', color: '#fff' }}
+                    iconStyle={{ background: backgroundColor, color: '#fff' }}
                     icon={<AIIcon />}
                 >
                     <h3 className="vertical-timeline-title">
                         Banaba Toegepaste Informatica – Artificial Intelligence
                     </h3>
                     <h4 className="vertical-timeline-subtitle">Howest, Brugge</h4>
-                    <p className={"grid-subtext"}>A one-year specialization focused on AI development, including machine learning, deep learning, and data-driven decision-making. Courses cover ethical AI, NLP, and computer vision.</p>
+                    <p className={"grid-subtext "}>A one-year specialization focused on AI development, including machine learning, deep learning, and data-driven decision-making. Courses cover ethical AI, NLP, and computer vision.</p>
                     <div className="flex justify-end items-center">
                         <a
                             className="flex items-center gap-2 cursor-pointer text-white-600"
@@ -94,16 +95,16 @@ const Education = () => {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{
-                        background: 'rgb(14, 14, 16)',
+                        background: backgroundColor,
                         color: '#fff',
                         boxShadow: 'none',
-                        border: '2px solid rgb(28, 28, 33)'
+                        border: '2px solid #9DB2BF'
                     }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(28, 28, 33)' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #9DB2BF' }}
                     shadowSize="small"
                     intersectionObserverProps={{ triggerOnce: false }}
                     date="2021 - 2024"
-                    iconStyle={{ background: 'rgb(14, 14, 16)', color: '#fff' }}
+                    iconStyle={{  background: backgroundColor, color: '#fff' }}
                     icon={<SoftwareIcon />}
                 >
                     <h3 className="vertical-timeline-title">
@@ -128,16 +129,16 @@ const Education = () => {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{
-                        background: 'rgb(14, 14, 16)',
+                        background: backgroundColor,
                         color: '#fff',
                         boxShadow: 'none',
-                        border: '2px solid rgb(28, 28, 33)'
+                        border: '2px solid #9DB2BF'
                     }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(28, 28, 33)' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #9DB2BF' }}
                     shadowSize="small"
                     intersectionObserverProps={{ triggerOnce: false }}
                     date="2019 - 2021"
-                    iconStyle={{ background: 'rgb(14, 14, 16)', color: '#fff' }}
+                    iconStyle={{ background: backgroundColor, color: '#fff' }}
                     icon={<SchoolIcon />}
                 >
                     <h3 className="vertical-timeline-title">Accountancy and IT</h3>

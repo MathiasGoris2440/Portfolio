@@ -22,6 +22,11 @@ export default {
           600: '#AFB0B6',
           500: '#62646C',
         },
+        primary: "#001F3F",
+        secondary: "#3A6D8C",
+        tertiary: "#3E5566",
+        quaternary: "#DDE6ED",
+
       },
       backgroundImage: {
         terminal: "url('/assets/terminal.png')",

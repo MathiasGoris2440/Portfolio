@@ -9,13 +9,11 @@
 }
 
 :root {
-    --bg-color: #010103;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
 
 body {
-    background: var(--bg-color);
     font-family: 'General Sans', sans-serif;
     cursor: url("/assets/custom-cursor.png"), auto;
 }
@@ -61,9 +59,6 @@ button {
     height: 100px;
 }
 
-.custom-shape-divider-bottom .shape-fill, .custom-shape-divider-top .shape-fill {
-    fill: var(--bg-color);
-}
 
 
 
@@ -75,8 +70,19 @@ button {
     transform: translateY(-5px);
 }
 
+p {
+    color: #DDE6ED;
+}
+
 
 @layer utilities {
+
+    body {
+        @apply bg-primary ;
+    }
+    .custom-shape-divider-bottom .shape-fill, .custom-shape-divider-top .shape-fill {
+        @apply fill-primary
+    }
 
     .cursor{
         @apply fixed w-10 h-10 border-2 rounded-full border-solid border-white left-0 z-50 pointer-events-none;
@@ -91,7 +97,7 @@ button {
     }
 
     .head-text {
-        @apply sm:text-4xl text-3xl font-semibold text-gray_gradient ;
+        @apply sm:text-4xl text-3xl font-semibold text-[#DDE6ED];
     }
 
     .nav-ul {
@@ -99,7 +105,7 @@ button {
     }
 
     .nav-li {
-        @apply text-neutral-400 hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
+        @apply text-[#DDE6ED] hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
     }
 
     .nav-li_a {
@@ -107,7 +113,7 @@ button {
     }
 
     .nav-sidebar {
-        @apply absolute left-0 right-0 bg-black-200 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
+        @apply absolute left-0 right-0 bg-secondary backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
     }
 
     .text-gray_gradient {
@@ -116,7 +122,7 @@ button {
 
     /* button component */
     .btn {
-        @apply flex gap-4 items-center justify-center p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
+        @apply flex gap-4 items-center justify-center p-3 rounded-md bg-tertiary  transition-all active:scale-95 text-white mx-auto;
     }
 
     .btn-ping {
@@ -133,12 +139,12 @@ button {
     }
 
     .hero_link {
-        @apply sm:w-10 w-6  sm:h-10 h-6 hover:scale-110 transition-transform m-2;
+        @apply sm:w-8 w-6  sm:h-8 h-6 hover:scale-110 transition-transform m-2;
     }
 
     /* about section */
     .grid-container {
-        @apply w-full h-full border border-black-300 bg-black-200 bg-opacity-80 rounded-lg sm:p-7 p-4 flex flex-col gap-3 relative z-20;
+        @apply w-full h-full border border-[#DDE6ED] bg-secondary/50 bg-opacity-80 rounded-lg sm:p-7 p-4 flex flex-col justify-around relative z-20 ;
     }
 
     .grid-container::before {
@@ -170,7 +176,7 @@ button {
     }
 
     .grid-subtext {
-        @apply text-[#afb0b6]  text-base font-generalsans;
+        @apply text-quaternary text-base font-generalsans;
     }
 
     .grid-container:hover .grid-subtext {
@@ -192,6 +198,10 @@ button {
         margin-left: -4px;
     }
 
+    .education-icon {
+        @apply sm:w-10 w-7 sm:h-10 h-7;
+        }
+
 
 
 
@@ -199,7 +209,7 @@ button {
         @apply text-base font-semibold mb-2 text-white  font-generalsans;
     }
     .vertical-timeline-subtitle{
-        @apply text-[#afb0b6]  text-sm font-generalsans;
+        @apply text-[#DDE6ED]  text-sm font-generalsans;
     }
 
 
@@ -231,23 +241,23 @@ button {
     }
 
     .work-canvas {
-        @apply col-span-1 rounded-lg bg-black-200 border border-black-300;
+        @apply col-span-1 rounded-lg bg-secondary/50 border border-[#DDE6ED];
     }
 
     .work-content {
-        @apply col-span-2 rounded-lg bg-black-200 border border-black-300;
+        @apply col-span-2 rounded-lg bg-secondary/50 border border-[#DDE6ED];
     }
 
     .work-content_container {
-        @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+        @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 hover:bg-[#65A6C4] rounded-lg sm:px-5 px-2.5;
     }
 
     .work-content_logo {
-        @apply rounded-3xl w-16 h-16 p-2 bg-black-600;
+        @apply rounded-3xl w-16 h-16 p-2 bg-[#F0F4F8] flex justify-center items-center;
     }
 
     .work-content_bar {
-        @apply flex-1 w-0.5 mt-4 h-full bg-black-300 group-hover:bg-black-500 group-last:hidden;
+        @apply flex-1 w-0.5 mt-4 h-full bg-[#DDE6ED] group-hover:bg-[#F0F4F8] group-last:hidden;
     }
 
     /* contact section */
@@ -273,7 +283,7 @@ button {
 
     /*  footer */
     .social-icon {
-        @apply w-12 h-12 rounded-full flex justify-center items-center bg-black-300 border border-black-200;
+        @apply w-16 h-16 rounded-full flex justify-center items-center bg-transparent;
     }
 }
 

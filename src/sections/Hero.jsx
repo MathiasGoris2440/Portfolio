@@ -26,7 +26,7 @@ const Hero = () => {
             gravity: 0.5,
         });
 
-        bgRef.current.spheres.setColors([886416.8631760156, 3594361.7239208743, 8753260.968944907]);
+        bgRef.current.spheres.setColors([1149259.5862237532, 1078236.696249067, 7415250.439830307]);
 
         // Cleanup (if provided by the library)
         return () => {
@@ -52,7 +52,7 @@ const Hero = () => {
         <section className="min-h-screen w-full flex flex-col" id="home">
             {/* Hero Text */}
             <div className="w-full sm:h-96 h-52  mx-auto flex flex-col items-center justify-center mt-36 c-space gap-3 relative z-10  ">
-                <p className="sm:text-3xl text-base font-medium text-white text-center font-generalsans border-2 rounded-lg border-white bg-black-200 p-2">
+                <p className="sm:text-3xl text-base font-medium text-white text-center font-generalsans border-2 rounded-lg border-[#27374D] bg-[#27374D]/80 p-2">
                     Hi, I am Mathias Goris <span className="waving-hand">🤚</span>
                 </p>
                 <HeroTag/>

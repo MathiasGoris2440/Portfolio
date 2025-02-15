@@ -27,14 +27,14 @@ const App = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.95 }}
                         transition={{ duration: 0.3 }}
-                        className="fixed top-[calc(50%-80px)] right-[1px] transform p-2 rounded flex flex-row items-center gap-2"
+                        className="fixed top-[calc(50%-80px)] right-[1px] transform p-2 rounded flex flex-row items-center gap-2 z-50"
                     >
-                        <p className="text-white-500 text-[12px]">{progress}</p>
+                        <p className="text-[12px]">{progress}</p>
                         {/* Progress Bar Container */}
-                        <div className="relative w-1 h-40 bg-black-200 overflow-hidden rounded-full bg-accent blur-[1px]">
+                        <div className="relative w-1 h-40 bg-black-200 overflow-hidden rounded-full bg-accent bg-opacity-20 blur-[1px]">
                             {/* Inner Fill, starting from the top */}
                             <div
-                                className="bg-emerald-500 absolute left-0 right-0 rounded"
+                                className="bg-blue-400 absolute left-0 right-0 rounded"
                                 style={{ height: `${progress}%` }}
                             ></div>
                         </div>

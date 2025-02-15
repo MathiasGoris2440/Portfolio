@@ -943,6 +943,8 @@ const DemoComputer = (props) => {
                         rotation={[Math.PI / 2, 0, 0]}
                         scale={0.963}
                     />
+                    <meshStandardMaterial color={0x526D82} />
+
                 </group>
                 <group
                     name="Monitor-B-_computer_0"
@@ -955,27 +957,35 @@ const DemoComputer = (props) => {
                         receiveShadow
                         geometry={nodes['Monitor-B-_computer_0_1'].geometry}
                         material={materials.computer}
+                        color={0x526D82}
                     />
+                    <meshBasicMaterial map={txt} />
                     <mesh
                         name="Monitor-B-_computer_0_2"
                         castShadow
                         receiveShadow
                         geometry={nodes['Monitor-B-_computer_0_2'].geometry}
                         material={materials.base__0}
+                        color={0x526D82}
                     />
+                    <meshBasicMaterial map={txt} />
                     <mesh
                         name="Monitor-B-_computer_0_3"
                         castShadow
                         receiveShadow
                         geometry={nodes['Monitor-B-_computer_0_3'].geometry}
                         material={materials.Material_36}
+                        color={0x526D82}
                     />
+                    <meshStandardMaterial color={0x526D82} />
+
                     <mesh
                         name="Monitor-B-_computer_0_4"
                         castShadow
                         receiveShadow
                         geometry={nodes['Monitor-B-_computer_0_4'].geometry}
                         material={materials.Material_35}
+                        color={0x526D82}
                     />
                     <mesh
                         name="Monitor-B-_computer_0_5"
@@ -983,6 +993,8 @@ const DemoComputer = (props) => {
                         receiveShadow
                         geometry={nodes['Monitor-B-_computer_0_5'].geometry}
                         material={materials.Material_34}
+                        color={0x526D82}
+
                     />
                     <mesh
                         name="Monitor-B-_computer_0_6"
@@ -990,6 +1002,7 @@ const DemoComputer = (props) => {
                         receiveShadow
                         geometry={nodes['Monitor-B-_computer_0_6'].geometry}
                         material={materials.keys}
+                        color={0x1d1d1d}
                     />
                     <mesh
                         name="Monitor-B-_computer_0_7"
@@ -997,6 +1010,7 @@ const DemoComputer = (props) => {
                         receiveShadow
                         geometry={nodes['Monitor-B-_computer_0_7'].geometry}
                         material={materials.keys2}
+                        color={0x1d1d1d}
                     />
                     <mesh
                         name="Monitor-B-_computer_0_8"
@@ -1004,6 +1018,7 @@ const DemoComputer = (props) => {
                         receiveShadow
                         geometry={nodes['Monitor-B-_computer_0_8'].geometry}
                         material={materials.Material_37}
+                        color={0x1d1d1d}
                     />
                 </group>
             </group>

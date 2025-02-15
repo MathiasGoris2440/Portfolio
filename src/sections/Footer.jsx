@@ -45,7 +45,7 @@ const Footer = () => {
                     onMouseEnter={() => handleMouseEnter(githubRef)}
                     onMouseLeave={() => handleMouseLeave(githubRef)}
                 >
-                    <Lottie animationData={GitHub} loop={true} autoplay={false} lottieRef={githubRef} className={"w-64 h-64"} />
+                    <Lottie animationData={GitHub} loop={true} autoplay={false} lottieRef={githubRef} className={"w-full h-full"} />
                 </a>
 
                 {/* LinkedIn Lottie */}
@@ -57,7 +57,7 @@ const Footer = () => {
                     onMouseEnter={() => handleMouseEnter(linkedinRef)}
                     onMouseLeave={() => handleMouseLeave(linkedinRef)}
                 >
-                    <Lottie animationData={LinkedIn} loop={false} autoplay={false} lottieRef={linkedinRef} className={"w-8 h-8"} />
+                    <Lottie animationData={LinkedIn} loop={false} autoplay={false} lottieRef={linkedinRef} className={"w-full h-full p-3"} />
                 </a>
 
                 {/* Instagram Lottie */}
@@ -69,11 +69,11 @@ const Footer = () => {
                     onMouseEnter={() => handleMouseEnter(instagramRef)}
                     onMouseLeave={() => handleMouseLeave(instagramRef)}
                 >
-                    <Lottie animationData={Instagram} loop={false} autoplay={false} lottieRef={instagramRef} className={"w-8 h-8"} />
+                    <Lottie animationData={Instagram} loop={false} autoplay={false} lottieRef={instagramRef} className={"w-full h-full p-3"} />
                 </a>
             </div>
 
-            <p className="text-white-500">© 2025 Mathias. All Rights Reserved.</p>
+            <p>© 2025 Mathias. All Rights Reserved.</p>
         </section>
     );
 };

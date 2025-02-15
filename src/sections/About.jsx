@@ -6,7 +6,7 @@ import {CursorContext} from "../Components/CursorContext.jsx";
 import LogoList from "../Components/LogoList.jsx";
 import Lottie from "lottie-react";
 import Developer from "/src/json/developer.json";
-
+import Mail from "/src/json/mail2.json";
 
 const gridContainerVariants = {
     hidden: {opacity: 0},
@@ -90,7 +90,7 @@ const About = () => {
                   variants={gridSquareVariants}
                   className={"col-span-1 xl:row-span-3"}>
                   <div className={"grid-container"} onMouseMove={handleMouseMove} style={{ "--mouse-x": mousePosition.x, "--mouse-y": mousePosition.y }}>
-                    <img src={"assets/resume.png"} alt={"grid-2"} className={"w-fit sm:h[276px] h-60 object-contain m-auto"}/>
+                    <img src={"cv/Mathias Goris.png"} alt={"grid-2"} className={"w-fit sm:h[276px] h-full p-10 object-contain m-auto"}/>
 
                       <div>
                       <p className={"grid-headtext"}>Download My CV</p>
@@ -105,9 +105,9 @@ const About = () => {
 
               <motion.div
                   variants={gridSquareVariants}
-                  className={"col-span-1 xl:row-span-4"}>
+                  className={"col-span-1 xl:row-span-3"}>
                   <div className={"grid-container"} onMouseMove={handleMouseMove} style={{ "--mouse-x": mousePosition.x, "--mouse-y": mousePosition.y }}>
-                      <div className={"rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center"}>
+                      <div className={"rounded-3xl w-full sm:h-[326px] h-full flex justify-center items-center m-auto"}>
                           <Globe
                               height={364}
                               width={364}
@@ -119,17 +119,17 @@ const About = () => {
                                   size: 48,
                               }]}
                               showAtmosphere={false}
-                              globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+                              globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
                               bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
 
                           />
                       </div>
-                      <div>
+                      <div className={''}>
                           <p className={"grid-headtext"}>
                               I work remotely across most timezones.
                           </p>
                           <p className={"grid-subtext"}>I&#39;m based in Geel, Belgium, with remote work available.</p>
-                          <a href={"#contact"} className={"w-fit"}>
+                          <a href={"#contact"} className={"w-fit justify-self-end"}>
                             <Button name={"Contact Me"} isBeam containerClass={"w-full mt-10"} />
                           </a>
                       </div>
@@ -137,7 +137,7 @@ const About = () => {
               </motion.div>
 
               <motion.div
-                  variants={gridSquareVariants} className={"xl:col-span-2 xl:row-span-3"}>
+                  variants={gridSquareVariants} className={"xl:col-span-2 xl:row-span-2"}>
                   <div className={"grid-container"} onMouseMove={handleMouseMove} style={{ "--mouse-x": mousePosition.x, "--mouse-y": mousePosition.y }}>
                       <LogoList />
 
@@ -158,13 +158,13 @@ const About = () => {
                   variants={gridSquareVariants}
                   className={"xl:col-span-1 xl:row-span-2"}>
                   <div className={"grid-container"} onMouseMove={handleMouseMove} style={{ "--mouse-x": mousePosition.x, "--mouse-y": mousePosition.y }}>
-                      <img src={"assets/grid4.png"} alt={"grid-4"} className={"w-full md:h-[126px] sm:h-[266px] h-fit object-cover sm:object-top"}/>
+                      <Lottie animationData={Mail} loop={true}  className={"w-fit h-fit"} />
 
                       <div className={"space-y-2"}>
-                          <p className={"grid-subtext text-center"}>Contact me</p>
+                          <p className={"grid-headtext"}>Contact me</p>
                           <div className={"copy-container"} onClick={handleCopy} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                               <img src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"} alt={"copy"} className={"w-6 h-6"} />
-                              <p className={"lg:text-2xl md:text-xl font-medium text-gray_gradient text-white"}>mathias.goris@outlook.com</p>
+                              <p className={"lg:text-2xl md:text-xl font-medium text-[#DDE6ED]"}>mathias.goris@outlook.com</p>
 
                           </div>
                       </div>

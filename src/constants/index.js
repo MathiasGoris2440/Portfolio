@@ -143,8 +143,8 @@ export const myProjects = [
         imgStyle: {
         },
         logoStyle: {
-            backgroundColor: '#2A1816',
-            border: '0.2px solid #36201D',
+            backgroundColor: '#AA3C30',
+            border: '0.2px solid #AA3C30',
             boxShadow: '0px 0px 60px 0px #AA3C304D',
         },
         spotlight: 'assets/spotlight1.png',
@@ -184,7 +184,7 @@ export const myProjects = [
             'object-fit': 'scale-down'
         },
         logoStyle: {
-            backgroundColor: '#13202F',
+            backgroundColor: '#17293E',
             border: '0.2px solid #17293E',
             boxShadow: '0px 0px 60px 0px #2F6DB54D',
 

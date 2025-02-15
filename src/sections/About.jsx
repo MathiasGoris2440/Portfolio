@@ -6,7 +6,7 @@ import {CursorContext} from "../Components/CursorContext.jsx";
 import LogoList from "../Components/LogoList.jsx";
 import Lottie from "lottie-react";
 import Developer from "/src/json/developer.json";
-import Mail from "/src/json/mail2.json";
+import Mail from "/src/json/mail.json";
 
 const gridContainerVariants = {
     hidden: {opacity: 0},

@@ -27,7 +27,7 @@ const HeroTag = () => {
     }, []);
 
     return (
-        <div className="relative pt-1 pb-1 pl-3 pr-3 sm:h-10 h-8  border-2 rounded-lg border-[#27374D] bg-[#27374D]/80  overflow-hidden flex items-center justify-center">
+        <div className="relative pt-1 pb-1 pl-3 pr-3 sm:h-10 h-6  border-2 rounded-lg border-[#27374D] bg-[#27374D]/80  overflow-hidden flex items-center justify-center">
             <div
                 className="flex flex-col items-center transform duration-500 ease-in-out"
                 id="wordList"

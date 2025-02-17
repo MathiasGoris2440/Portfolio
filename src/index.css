@@ -27,7 +27,7 @@ button {
 }
 .custom-shape-divider-top {
     position: absolute;
-    top: 0;
+
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -44,7 +44,7 @@ button {
 
 .custom-shape-divider-bottom {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;

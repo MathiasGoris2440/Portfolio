@@ -4,7 +4,6 @@ import HeroTag from "../Components/HeroTag.jsx";
 import ScrollDown from "/src/json/Scroll-Down.json";
 import Lottie from "lottie-react";
 import {CursorContext} from "../Components/CursorContext.jsx";
-import {calculateSizes} from "../constants/index.js";
 import {useMediaQuery} from "react-responsive";
 
 const Hero = () => {
@@ -12,7 +11,6 @@ const Hero = () => {
     const isMobile = useMediaQuery({ maxWidth: 768 });
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 
-    const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
     const canvasRef = useRef(null);
     const bgRef = useRef(null);
@@ -21,8 +19,8 @@ const Hero = () => {
         // Initialize the background after the canvas is mounted.
         bgRef.current = Spheres1Background(canvasRef.current, {
             count: 300,
-            minSize: 0.3,
-            maxSize: 1,
+            minSize: isSmall ? 1 : isMobile ? 0.5 : isTablet ? 0.4 : 0.3,
+            maxSize: isSmall ? 1.5 : isMobile ? 1.3 : isTablet ? 1.2 : 1,
             gravity: 0.5,
         });
 
@@ -51,14 +49,14 @@ const Hero = () => {
     return (
         <section className="min-h-screen w-full flex flex-col" id="home">
             {/* Hero Text */}
-            <div className="w-full sm:h-96 h-52  mx-auto flex flex-col items-center justify-center mt-36 c-space gap-3 relative z-10  ">
-                <p className="sm:text-3xl text-base font-medium text-white text-center font-generalsans border-2 rounded-lg border-[#27374D] bg-[#27374D]/80 p-2">
+            <div className="w-full sm:h-[40vh] h-[24vh]  mx-auto flex flex-col items-center justify-center mt-36 c-space gap-3 relative z-10  ">
+                <p className="sm:text-3xl text-[12px] font-medium text-white text-center font-generalsans border-2 rounded-lg border-[#27374D] bg-[#27374D]/80 p-2">
                     Hi, I am Mathias Goris <span className="waving-hand">🤚</span>
                 </p>
                 <HeroTag/>
             </div>
             <div
-                className="w-full sm:h-96 h-52  absolute top-32 left-0 pointer-events-none"
+                className="w-full sm:h-[40vh] h-[24vh]  absolute top-32 left-0 pointer-events-none"
                 style={{zIndex: -1}}
             >
                 <div className="custom-shape-divider-top">

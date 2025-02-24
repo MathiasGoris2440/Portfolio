@@ -18,6 +18,8 @@ const App = () => {
         setProgress(Math.round(latest * 100));
     })
 
+    const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
     return (
         <div>
             <AnimatePresence>
@@ -29,7 +31,7 @@ const App = () => {
                         transition={{ duration: 0.3 }}
                         className="fixed top-[calc(50%-80px)] right-[1px] transform p-2 rounded flex flex-row items-center gap-2 z-50"
                     >
-                        <p className="text-[12px]">{progress}</p>
+                        {!isMobile && <p className="text-[12px]">{progress}</p>}
                         {/* Progress Bar Container */}
                         <div className="relative w-1 h-40 bg-black-200 overflow-hidden rounded-full bg-accent bg-opacity-20 blur-[1px]">
                             {/* Inner Fill, starting from the top */}

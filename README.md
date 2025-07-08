@@ -48,9 +48,9 @@ Check out my portfolio: [test.com](https://test.com)
 
 ## 📬 Contact
 
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/mathias-goris-4574572a0/)
-- **GitHub:** [Your GitHub Profile](https://github.com/MathiasGoris2440)
-- **Email:** [Your Email](mailto:mathias.goris@outlook.com)
+- **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/mathias-goris-4574572a0/)
+- **GitHub:** [MY GitHub Profile](https://github.com/MathiasGoris2440)
+- **Email:** [My Email](mailto:mathias.goris@outlook.com)
 
 Feel free to reach out if you have any questions or collaboration ideas!
 

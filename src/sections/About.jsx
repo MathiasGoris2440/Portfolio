@@ -81,7 +81,7 @@ const About = () => {
 
                       <div>
                           <p className={"grid-headtext"}>Hi, I&#39;m Mathias</p>
-                          <p className={"grid-subtext "}>I am a passionate IT student with strong programming skills. My goal is to create innovative technological solutions and make complex technical concepts understandable.</p>
+                          <p className={"grid-subtext "}>I am a passionate IT professional with a background in Applied Computer Science, specialized in AI and Software Engineering. I strive to develop innovative technological solutions and make complex concepts clear and practical for real-world use.</p>
                       </div>
                   </div>
               </motion.div>

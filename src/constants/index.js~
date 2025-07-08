@@ -184,7 +184,7 @@ export const myProjects = [
             'object-fit': 'scale-down'
         },
         logoStyle: {
-            backgroundColor: '#17293E',
+            backgroundColor: '#13202F',
             border: '0.2px solid #17293E',
             boxShadow: '0px 0px 60px 0px #2F6DB54D',
 
@@ -357,7 +357,7 @@ export const myExperience = [
         id: 1,
         name: 'Oh Green',
         pos: 'Jobstudent tuincentrum',
-        duration: '2024 - 2025',
+        duration: '2024 - Present',
         title: "I am responsible for restocking inventory and ensuring the store remains clean, organized, and visually appealing. Additionally, I handle cashier duties, process payments efficiently, and provide excellent customer service at checkout. I also assist in setting up seasonal displays and promotional arrangements to enhance the shopping experience.",
         icon: 'assets/ohGreenLogo.png',
         animation: 'victory',
@@ -366,7 +366,7 @@ export const myExperience = [
         id: 2,
         name: 'Beego',
         pos: 'IT Support',
-        duration: '2023 - 2025',
+        duration: '2023 - Present',
         title: "At Beego, I help people with their IT problems, which strengthens and sharpens my own problem-solving skills. By providing personal support and practical solutions, I not only enhance my technical knowledge but also improve my communication skills and customer focus.",
         icon: 'assets/beego_logo.png',
         animation: 'clapping',

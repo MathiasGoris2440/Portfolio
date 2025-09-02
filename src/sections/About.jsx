@@ -1,6 +1,6 @@
 import  {useContext, useState} from 'react'
 import Globe from "react-globe.gl";
-import Button from "../Components/Button.jsx";
+import Button from "../components/Button.jsx";
 import { motion } from "motion/react"
 import {CursorContext} from "../components/CursorContext.jsx";
 import LogoList from "../components/LogoList.jsx";

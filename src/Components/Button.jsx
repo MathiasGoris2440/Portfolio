@@ -1,5 +1,5 @@
 import {useContext} from "react";
-import { CursorContext } from "../components/CursorContext";
+import { CursorContext } from "./CursorContext";
 import PropTypes from "prop-types";
 
 

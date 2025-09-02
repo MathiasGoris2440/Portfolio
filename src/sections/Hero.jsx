@@ -1,9 +1,9 @@
-import React, {useContext, useEffect, useRef} from 'react';
+import {useContext, useEffect, useRef} from 'react';
 import Spheres1Background from 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.17/build/backgrounds/spheres1.cdn.min.js';
-import HeroTag from "../Components/HeroTag.jsx";
+import HeroTag from "../components/HeroTag.jsx";
 import ScrollDown from "/src/json/Scroll-Down.json";
 import Lottie from "lottie-react";
-import {CursorContext} from "../Components/CursorContext.jsx";
+import {CursorContext} from "../components/CursorContext.jsx";
 import {useMediaQuery} from "react-responsive";
 
 const Hero = () => {

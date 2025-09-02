@@ -24,7 +24,7 @@ const HeroTag = () => {
         }, CHANGE_WORD_TIMER);
 
         return () => clearInterval(interval);
-    }, []);
+    });
 
     return (
         <div className="relative pt-1 pb-1 pl-3 pr-3 sm:h-10 h-6  border-2 rounded-lg border-[#27374D] bg-[#27374D]/80  overflow-hidden flex items-center justify-center">

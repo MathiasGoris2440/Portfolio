@@ -1,9 +1,9 @@
-import React, {useContext, useRef} from "react";
+import {useContext, useRef} from "react";
 import Lottie from "lottie-react";
 import LinkedIn from "/src/json/linkedin.json";
 import GitHub from "/src/json/github.json";
 import Instagram from "/src/json/instagram.json";
-import {CursorContext} from "../Components/CursorContext.jsx";
+import {CursorContext} from "../components/CursorContext.jsx";
 
 const Footer = () => {
     const linkedinRef = useRef(null);

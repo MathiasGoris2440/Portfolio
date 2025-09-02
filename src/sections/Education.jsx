@@ -1,7 +1,7 @@
-import React, {useContext} from 'react';
+import  {useContext} from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import {CursorContext} from "../Components/CursorContext.jsx";
+import {CursorContext} from "../components/CursorContext.jsx";
 
 
 const Education = () => {
@@ -69,7 +69,7 @@ const Education = () => {
                     contentArrowStyle={{ borderRight: '7px solid  #9DB2BF' }}
                     shadowSize="small"
                     intersectionObserverProps={{ triggerOnce: false }}
-                    date="2024 - Present"
+                    date="2024 - 2025"
                     iconStyle={{ background: backgroundColor, color: '#fff' }}
                     icon={<AIIcon />}
                 >

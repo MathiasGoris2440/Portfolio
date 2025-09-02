@@ -1,4 +1,5 @@
-import React, { createContext, useRef } from "react";
+import { createContext, useRef } from "react";
+import PropTypes from "prop-types";
 
 export const CursorContext = createContext(null);
 
@@ -10,4 +11,8 @@ export const CursorProvider = ({ children }) => {
             {children}
         </CursorContext.Provider>
     );
+};
+
+CursorProvider.propTypes = {
+  children: PropTypes.node,   // <--- fixes ESLint warning
 };

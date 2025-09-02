@@ -1,9 +1,9 @@
-import React, {Suspense, useState} from 'react'
+import {Suspense, useState} from 'react'
 import {Canvas} from "@react-three/fiber";
 import {myExperience} from "../constants/index.js";
 import {OrbitControls} from "@react-three/drei";
-import CanvasLoader from "../Components/CanvasLoader.jsx";
-import Developer from "../Components/Developer.jsx";
+import CanvasLoader from "../components/CanvasLoader.jsx";
+import Developer from "../components/Developer.jsx";
 
 const Experience = () => {
     const [animationName, setAnimationName] = useState('idle')

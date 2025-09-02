@@ -1,9 +1,9 @@
-import React, {useContext, useState} from 'react'
+import  {useContext, useState} from 'react'
 import Globe from "react-globe.gl";
 import Button from "../Components/Button.jsx";
 import { motion } from "motion/react"
-import {CursorContext} from "../Components/CursorContext.jsx";
-import LogoList from "../Components/LogoList.jsx";
+import {CursorContext} from "../components/CursorContext.jsx";
+import LogoList from "../components/LogoList.jsx";
 import Lottie from "lottie-react";
 import Developer from "/src/json/developer.json";
 import Mail from "/src/json/mail.json";

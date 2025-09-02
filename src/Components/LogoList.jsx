@@ -1,4 +1,3 @@
-import React from 'react'
 import { SkillsLogo } from "../constants/index.js";
 
 const LogoList = () => {

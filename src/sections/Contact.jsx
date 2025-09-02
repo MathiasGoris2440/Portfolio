@@ -1,7 +1,7 @@
-import React, {useContext, useRef, useState} from 'react'
+import {useContext, useRef, useState} from 'react'
 import emailjs from '@emailjs/browser'
 import { motion } from "motion/react"
-import {CursorContext} from "../Components/CursorContext.jsx";
+import {CursorContext} from "../components/CursorContext.jsx";
 import {useMediaQuery} from "react-responsive";
 
 const gridContainerVariants = {
@@ -129,7 +129,7 @@ const Contact = () => {
                                 required
                                 rows={5}
                                 className={"field-input"}
-                                placeholder={"Hi, I wanna give you a job..."}
+                                placeholder={"Hello, I’d like to talk about a potential job opportunity..."}
                             />
                         </label>
 

@@ -1,11 +1,11 @@
-import React, {Suspense, useContext, useState} from 'react'
+import {Suspense, useContext, useState} from 'react'
 import {myProjects} from "../constants/index.js";
 import {Canvas} from "@react-three/fiber";
 import {Center, OrbitControls} from "@react-three/drei";
-import CanvasLoader from "../Components/CanvasLoader.jsx";
-import DemoComputer from "../Components/DemoComputer.jsx";
+import CanvasLoader from "../components/CanvasLoader.jsx";
+import DemoComputer from "../components/DemoComputer.jsx";
 import { motion } from "motion/react"
-import {CursorContext} from "../Components/CursorContext.jsx";
+import {CursorContext} from "../components/CursorContext.jsx";
 
 const projectCount = myProjects.length;
 

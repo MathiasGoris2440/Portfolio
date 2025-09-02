@@ -1,5 +1,7 @@
 import {useContext} from "react";
-import {CursorContext} from "./CursorContext.jsx";
+import { CursorContext } from "../components/CursorContext";
+import PropTypes from "prop-types";
+
 
 const Button = ({name, isBeam = false, containerClass}) => {
 
@@ -29,4 +31,11 @@ const Button = ({name, isBeam = false, containerClass}) => {
         </button>
     )
 }
-export default Button
+
+Button.propTypes = {
+  name: PropTypes.string.isRequired,     
+  isBeam: PropTypes.bool,               
+  containerClass: PropTypes.string       
+};
+
+export default Button;

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import {useMediaQuery} from "react-responsive";
 
 const words = ["IT Student", "Developer", "Problem Solver", "Tech Enthusiast", "AI Explorer"];
